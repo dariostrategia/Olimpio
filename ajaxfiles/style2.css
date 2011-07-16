@@ -1,0 +1,60 @@
+#rightcolumn{
+background-color: #E0FFB3;
+}
+
+#cartooltip{
+position: absolute;
+visibility: hidden;
+background-color: lightyellow;
+border: 2px solid red;
+padding: 5px;
+font-size: 120%;
+font-weight: bold;
+}
+
+<style>
+.contenedore {
+	width: 650px;
+	height: 500px;
+	margin-top: 5 px;
+}
+
+.cuadrose{
+	float: left;
+	height: 205px;
+	width: 157px;
+	margin-right: 5px;
+	background-color: #008da9;
+	color: #FFF;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-bottom: 5px;
+}
+.contenedore .cuadrose .textose {
+	float: left;
+	height: 30px;
+	width: 147px;
+	margin-left: 5px;
+	font-size: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.contenedore .cuadrose img {
+	margin-left: 5px;
+}
+.tituloe {
+	font-size: 14px;
+	color: #FFF;
+	font-weight: bold;
+}
+.contenedore .headere {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	background-image: url(backmenu.jpg);
+	background-repeat: repeat-x;
+	height: 25px;
+	width: 650px;
+	padding-left: 10px;
+	padding-top: 2px;
+}
+</style>

@@ -1,0 +1,86 @@
+<style>
+.contenedor {
+	width: 650px;
+	height: 500px;
+}
+
+.cuadros{
+	float: left;
+	height: 205px;
+	width: 157px;
+	margin-right: 5px;
+	background-color: #008da9;
+	color: #FFF;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-bottom: 5px;
+}
+.contenedor .cuadros .textos {
+	float: left;
+	height: 30px;
+	width: 147px;
+	margin-left: 5px;
+	font-size: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.contenedor .cuadros img {
+	margin-left: 5px;
+}
+.titulo {
+	font-size: 14px;
+	color: #FFF;
+	font-weight: bold;
+}
+.contenedor .header {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	background-image: url(ajaxfiles/backmenu.jpg);
+	background-repeat: repeat-x;
+	height: 25px;
+	width: 650px;
+	padding-left: 10px;
+	padding-top: 2px;
+}
+</style>
+
+
+<script type="text/javascript" src="js/curvycorners.js"></script>
+<script type="text/JavaScript">
+  addEvent(window, 'load', initCorners);
+  function initCorners() {
+    var settings = {
+      tl: { radius: 10 },
+      tr: { radius: 10 },
+      bl: { radius: 10 },
+      br: { radius: 10 },
+      antiAlias: true
+    }
+    curvyCorners(settings, ".cuadros");
+  }
+</script>
+
+<div class="contenedor"><!---contenedor de los cuadros azules--->
+<div class="header">Baños</div>
+ <div class="cuadros"><!----comienza 1 cuadro azul---->
+     <img src="sarricida.png" width="148" height="112" />
+     <div class="textos">
+     <span class="titulo">SARRIGEL</span><br />
+      Sarricida concentrado en gel para pisos y muebles de baño. Liquido que desincrusta y demuece sarro y óxido .
+       Contiene ácidos inorgánicos.
+   </div>
+ </div><!----termina 1 cuadro azul---->
+ 
+  <div class="cuadros"><!----comienza 1 cuadro azul---->
+     <img src="sarricida.png" width="148" height="112" />
+     <div class="textos">
+     <span class="titulo">SARRIGEL</span><br />
+      Sarricida concentrado en gel para pisos y muebles de baño. Liquido que desincrusta y demuece sarro y óxido .
+       Contiene ácidos inorgánicos.
+   </div>
+ </div><!----termina 1 cuadro azul---->
+ 
+ 
+ 
+
+</div><!---termina contenedor de los cuadros azules---->

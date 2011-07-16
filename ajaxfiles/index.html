@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<LINK REL="SHORTCUT ICON" HREF="icono.ico"> 
+<title>Olimpio</title>
+
+        <script type="text/javascript" src="jquery.min.js"></script>		
+        <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+            $(function() {
+                $('a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1500,'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    */
+                    event.preventDefault();
+                });
+            });
+        </script>
+
+
+<style type="text/css">
+
+#rightcolumn{
+	float:left;
+	width:640px;
+	min-height: 400px;
+	padding-bottom: 8px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	height: 700px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.image   {
+	margin-left: 487px;
+	float: left;
+}
+
+body {
+	margin: 0px;
+}
+.contentall {
+	height: 100%;
+	width: 100%;
+	margin-left: 8%;
+}
+.menu_nav {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 83px;
+	margin: 0px;
+}
+.menu_nav ul {
+	list-style-type: none;
+}
+.menu_nav ul li {
+	list-style-type: none;
+	display: inline;
+	float: left;
+	margin: 0px;
+}
+.listado {
+	margin-left: 495px;
+	float: left;
+	margin-top: 0px;
+	z-index: 0;
+}
+.repeat {
+	background-image: url(imagenes/repeat.png);
+	background-repeat: repeat-x;
+	width: 210px;
+	height: 45px;
+	float: left;
+}
+.contenedor {
+	height: 2000px;
+	background-color: #FFF;
+	z-index: 0;
+	float: left;
+	margin-right: 20px;
+}
+.pleca_azul {
+	background-color: #008da8;
+	height: 22px;
+	width: 100%;
+	position: fixed;
+	bottom: -3px;
+}
+.inicio {
+	margin-top: 40px;
+	margin-left: 250px;
+}
+.imgsuperior {
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+.limpiador {
+	position: fixed;
+	z-index: 1;
+}
+.productos {
+	margin-top: 100px;
+	height: 1200px;
+}
+.contenedor #productoss .casita {
+	margin-left: 450px;
+	margin-bottom: 50px;
+}
+.contenedor #servicioss img {
+	margin-left: 400px;
+}
+
+
+/* @group contacto */
+
+#form_contacto {
+	width: 500px;
+	height: 450px;
+	background-repeat: no-repeat;
+	float: left;
+	background-image: url(imagenes/contacto.jpg);
+	color: #333;
+}
+
+input#nombre {
+	color: #333;
+	background-color: transparent;
+	border-style: none;
+	width: 155px;
+	height: 20px;
+	margin-top: 9px;
+	font-size: 9px;
+	float: left;
+	margin-left: 67px;
+}
+input#ciudad {
+	color: #333;
+	background-color: transparent;
+	border-style: none;
+	width: 140px;
+	height: 20px;
+	margin-left: 125px;
+	margin-top: 8px;
+	float: left;
+	margin-right: 0px;
+}
+input#empresa {
+	color: #333;
+	background-color: transparent;
+	border-style: none;
+	width: 150px;
+	height: 20px;
+	margin-top: 9px;
+	float: left;
+	margin-left: 70px;
+}
+input#telefono {
+	color: #333;
+	background-color: transparent;
+	border-style: none;
+	width: 140px;
+	height: 20px;
+	margin-top: 7px;
+	float: left;
+	margin-left: 80px;
+}
+input#correo {
+	color: #333;
+	background-color: transparent;
+	border-style: none;
+	width: 130px;
+	height: 20px;
+	margin-top: 7px;
+	float: left;
+	margin-left: 135px;
+	font-size: 9px;
+}
+
+input#estado {
+	color: #333;
+	background-color: transparent;
+	border-style: none;
+	width: 140px;
+	height: 20px;
+	margin-left: 120px;
+	margin-top: 9px;
+	float: left;
+}
+input#giro {
+	color: #333;
+	background-color: transparent;
+	border-style: none;
+	width: 140px;
+	height: 20px;
+	margin-top: 9px;
+	float: left;
+	margin-left: 130px;
+}
+
+input#enviar {
+	background-color: transparent;
+	z-index: 1;
+	visibility: visible;
+	position: relative;
+	left: 380px;
+	color: #333;
+	border-left-style: none;
+	float: left;
+	background-image: url(imagenes/enviar.png);
+	background-repeat: no-repeat;
+	height: 60px;
+	width: 75px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+}
+.alineadop {
+	float: left;
+	height: 20px;
+	width: 100px;
+	margin-left: 360px;
+	margin-top: 5px;
+}
+.contenedor #contactoo .alinear #form_contacto form .alineadop label #sii {
+	float: left;
+}
+
+textarea#mensaje {
+	background-color: transparent;
+	color: #333;
+	font-size: 12px;
+	border-style: none;
+	width: 380px;
+	margin-left: 106px;
+	margin-top: 15px;
+	height: 175px;
+	z-index: 0;
+	float: left;
+}
+
+form {
+	width: 500px;
+	height: 400px;
+	float: left;
+	padding-top: 50px;
+}
+label {
+	display: inline;
+	float: left;
+}
+#contenedor #print #servicios_txt ul li {
+	list-style-type: none;
+	margin-bottom: 35px;
+	float: left;
+}
+
+
+.alinear {
+	float: left;
+	height: 450px;
+	width: 500px;
+	margin-bottom: 50px;
+	margin-left: 570px;
+}
+#contactoo {
+	height: 700px;
+	width: 1124px;
+	padding-top: 50px;
+}
+.contenedor #contactoo .alinear #form_contacto form .alineadop label #noo {
+	float: left;
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+
+<script type="text/javascript">
+
+/***********************************************
+* Dynamic Ajax Content- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var loadedobjects=""
+var rootdomain="http://"+window.location.hostname
+
+function ajaxpage(url, containerid){
+var page_request = false
+if (window.XMLHttpRequest) // if Mozilla, Safari etc
+page_request = new XMLHttpRequest()
+else if (window.ActiveXObject){ // if IE
+try {
+page_request = new ActiveXObject("Msxml2.XMLHTTP")
+} 
+catch (e){
+try{
+page_request = new ActiveXObject("Microsoft.XMLHTTP")
+}
+catch (e){}
+}
+}
+else
+return false
+page_request.onreadystatechange=function(){
+loadpage(page_request, containerid)
+}
+page_request.open('GET', url, true)
+page_request.send(null)
+}
+
+function loadpage(page_request, containerid){
+if (page_request.readyState == 4 && (page_request.status==200 || window.location.href.indexOf("http")==-1))
+document.getElementById(containerid).innerHTML=page_request.responseText
+}
+
+function loadobjs(){
+if (!document.getElementById)
+return
+for (i=0; i<arguments.length; i++){
+var file=arguments[i]
+var fileref=""
+if (loadedobjects.indexOf(file)==-1){ //Check to see if this object has not already been added to page before proceeding
+if (file.indexOf(".js")!=-1){ //If object is a js file
+fileref=document.createElement('script')
+fileref.setAttribute("type","text/javascript");
+fileref.setAttribute("src", file);
+}
+else if (file.indexOf(".css")!=-1){ //If object is a css file
+fileref=document.createElement("link")
+fileref.setAttribute("rel", "stylesheet");
+fileref.setAttribute("type", "text/css");
+fileref.setAttribute("href", file);
+}
+}
+if (fileref!=""){
+document.getElementsByTagName("head").item(0).appendChild(fileref)
+loadedobjects+=file+" " //Remember this object as being already added to page
+}
+}
+}
+
+</script>
+
+
+</head>
+
+<body onload="MM_preloadImages('imagenes/home2.png','imagenes/olimpio2.png','imagenes/servicios2.png','imagenes/productos2.png','imagenes/contacto2.png')">
+<div class="contentall">
+<div class="limpiador"><img src="imagenes/menu_main_01.png" width="536" height="514" /></div>
+
+
+<div class="menu_nav">
+<ul class="listado">
+  <li><a href="#inicio" target="_self" onmouseover="MM_swapImage('home','','imagenes/home2.png',1)" onmouseout="MM_swapImgRestore()"><img src="imagenes/home.png" name="home" width="65" height="45" border="0" id="home" /></a></li>
+		<li><a href="#olimpioss" target="_self" onmouseover="MM_swapImage('olimpio','','imagenes/olimpio2.png',1)" onmouseout="MM_swapImgRestore()"><img src="imagenes/olimpio.png" name="olimpio" width="77" height="45" border="0" id="olimpio" /></a></li>
+		<li><a href="#servicioss" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('servicios','','imagenes/servicios2.png',1)"><img src="imagenes/servicios.png" name="servicios" width="77" height="45" border="0" id="servicios" /></a></li>
+		<li><a href="#productoss" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('productos','','imagenes/productos2.png',1)"><img src="imagenes/productos.png" name="productos" width="85" height="45" border="0" id="productos" /></a></li>
+		<li><a href="#contactoo" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('contacto','','imagenes/contacto2.png',1)"><img src="imagenes/contacto.png" name="contacto" width="77" height="45" border="0" id="contacto" /></a></li>
+        
+</ul>
+    <div class="repeat"></div>
+</div>
+
+        
+        
+<div class="contenedor">
+<div id="inicio">
+  <img src="imagenes/inicio.png" width="923" height="610" class="inicio" /></div>
+<div id="olimpioss"><img src="imagenes/olimpiotxt.png" width="1216" height="891" /></div>
+<div id="servicioss"><img src="imagenes/serviciostxt.png" width="723" height="994" /></div>
+<div class="productos" id="productoss">
+
+<div class="casita">
+<img src="productos/productos.jpg" width="647" height="375" usemap="#Map" border="0"/>
+<map name="Map" id="Map">
+  <area shape="rect" coords="302,274,367,295" href="javascript:ajaxpage('ajaxfiles/external.htm', 'rightcolumn');" />
+  <area shape="rect" coords="415,264,469,288" href="javascript:ajaxpage('ajaxfiles/external2.htm', 'rightcolumn');" />
+  <area shape="rect" coords="422,183,478,206" href="javascript:ajaxpage('ajaxfiles/external3.htm', 'rightcolumn');" />
+  <area shape="rect" coords="496,191,553,218" href="javascript:ajaxpage('ajaxfiles/external4.htm', 'rightcolumn');" />
+ 
+ 
+</map>
+
+<div id="rightcolumn"></div>
+</div><!---fin casita--->
+</div><!---fin productos--->
+
+<div id="contactoo"><!---contacto--->
+  <span class="image"><img src="imagenes/contactoheader.jpg" width="585" height="192"/></span>
+<div class="alinear">
+  <div id="form_contacto">
+    <form action="send.php" method="post" name="formulario">
+  <input type="text" name="nombre" id="nombre" />
+  <input type="text" name="estado" id="estado" />
+  <input type="text" name="telefono" id="telefono" />
+  <input type="text" name="correo" id="correo" />
+  <input type="text" name="empresa" id="empresa" />
+  <input type="text" name="giro" id="giro" />
+  <div class="alineadop">
+    <label>
+      <input type="radio" name="trabaja con alguna empresa de limpieza" value="si" id="sii" />
+      <img src="imagenes/si.png" width="14" height="18" alt="si" />    </label>
+   
+    <label>
+      <input type="radio" name="trabaja con alguna empresa de limpieza" value="noo" id="noo" />
+      <img src="imagenes/no.png" width="19" height="17" /></label>
+    </div>
+
+  <textarea name="mensaje" cols="" rows="" id="mensaje"></textarea>
+
+
+
+  <input name="enviar" type="submit" value="" id="enviar" />
+    </form>
+     </div><!---fin formulario-->
+  </div><!---fin alinear-->
+
+</div><!---fin contacto-->
+
+</div>
+</div>
+<div class="pleca_azul">
+</div>
+
+</body>
+</html>
